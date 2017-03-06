@@ -1,9 +1,9 @@
 package com.juanrarios.springbatch.rest.dto;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Calendar;
 import java.util.List;
+
+import javax.json.Json;
+import javax.json.JsonObject;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,29 +17,44 @@ public class IndicatorController {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(IndicatorController.class);
 
-	@RequestMapping(method = RequestMethod.GET)
-	public List<IndicatorDTO> findIndicators() {
+	@RequestMapping(method = RequestMethod.GET, produces = "application/json")
+	public String findIndicators() {
 		LOGGER.info("Finding all indicators");
 
-		List<IndicatorDTO> indicators = createIndicators();
+//		List<IndicatorDTO> indicators = createIndicators();
 
-		LOGGER.info("Found {} indicators", indicators.size());
+//		LOGGER.info("Found {} indicators", indicators.size());
 
-		return indicators;
+		return example().toString();
 	}
 
-	private List<IndicatorDTO> createIndicators() {
-		IndicatorDTO indicator1 = new IndicatorDTO();
-		indicator1.setId(new Long(1013));
-		indicator1.setName("Término de facturación de energía activa del PVPC peaje por defecto");
-		List<HourPriceDTO> values = new ArrayList<>();
-		HourPriceDTO h1 = new HourPriceDTO();
-		Calendar cal = Calendar.getInstance();
-		h1.setDateTimeUTC(cal);
-		h1.setValue(103.31);
-		values.add(h1);
-		indicator1.setValues(values);
-
-		return Arrays.asList(indicator1);
+	// private List<IndicatorDTO> createIndicators() {
+	// IndicatorDTO indicator1 = new IndicatorDTO();
+	// indicator1.setId(new Long(1013));
+	// indicator1.setName("Término de facturación de energía activa del PVPC
+	// peaje por defecto");
+	// List<HourPriceDTO> values = new ArrayList<>();
+	// HourPriceDTO h1 = new HourPriceDTO();
+	// Calendar cal = Calendar.getInstance();
+	// h1.setDateTimeUTC(cal);
+	// h1.setValue(103.31);
+	// values.add(h1);
+	// indicator1.setValues(values);
+	//
+	// List<IndicatorDTO> result = new ArrayList<>();
+	// result.add(indicator1);
+	// return result;
+	// }
+	
+	private JsonObject example() {
+		 JsonObject value = Json.createObjectBuilder()
+			     .add("indicator", Json.createObjectBuilder()
+			         .add("name", "Término de facturación de energía activa del PVPC peaje por defecto")
+			         .add("id", "1013")
+				     .add("values", Json.createArrayBuilder()
+					         .add(Json.createObjectBuilder()
+					             .add("value", "103.31")
+					             .add("datetime_utc", "2015-10-20T22:00:00Z")))).build();
+		 return value;
 	}
 }

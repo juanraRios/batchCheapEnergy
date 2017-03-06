@@ -21,6 +21,8 @@ public class LoggingIndicatorWriter implements ItemWriter<IndicatorDTO> {
 	public void write(List<? extends IndicatorDTO> items) throws Exception {
 		LOGGER.info("Received the information of {} indicators", items.size());
 
+		LOGGER.info("Name: {}", items.get(0).getName());
+
 		items.forEach(i -> LOGGER.debug("Received the information of a indicator: {}", i));
 	}
 }

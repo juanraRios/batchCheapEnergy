@@ -10,6 +10,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 
 import com.juanrarios.springbatch.rest.dto.IndicatorDTO;
+import com.juanrarios.springbatch.rest.dto.ResponseIndicatorDTO;
 
 /**
  * This class demonstrates how we can read the input of our batch job from an
@@ -59,10 +60,14 @@ class RESTIndicatorReader implements ItemReader<IndicatorDTO> {
 	private List<IndicatorDTO> fetchIndicatorDataFromAPI() {
 		LOGGER.debug("Fetching indicator data from an external API by using the url: {}", apiUrl);
 
-		ResponseEntity<IndicatorDTO[]> response = restTemplate.getForEntity(apiUrl, IndicatorDTO[].class);
-		IndicatorDTO[] indicatorData = response.getBody();
-		LOGGER.debug("Found {} indicators", indicatorData.length);
+		// RestTemplate restTemplate = new RestTemplate();
+		// IndicatorDTO indicator = restTemplate.getForObject(apiUrl,
+		// IndicatorDTO.class);
 
-		return Arrays.asList(indicatorData);
+		ResponseEntity<ResponseIndicatorDTO> response = restTemplate.getForEntity(apiUrl, ResponseIndicatorDTO.class);
+		IndicatorDTO indicator = response.getBody().getIndicator();
+		// LOGGER.debug("Found {} indicators", indicator.);
+
+		return Arrays.asList(indicator);
 	}
 }
