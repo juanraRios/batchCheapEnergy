@@ -83,6 +83,11 @@
 			<artifactId>javax.json</artifactId>
 			<version>1.0.4</version>
 		</dependency>
+		<dependency>
+		    <groupId>com.firebase</groupId>
+		    <artifactId>firebase-client</artifactId>
+			<version>1.0.11</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<finalName>spring-batch-example</finalName>

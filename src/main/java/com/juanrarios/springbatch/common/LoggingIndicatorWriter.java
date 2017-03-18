@@ -16,13 +16,14 @@ import com.juanrarios.springbatch.rest.dto.IndicatorDTO;
 public class LoggingIndicatorWriter implements ItemWriter<IndicatorDTO> {
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(LoggingIndicatorWriter.class);
-
+	
 	@Override
 	public void write(List<? extends IndicatorDTO> items) throws Exception {
 		LOGGER.info("Received the information of {} indicators", items.size());
 
-		LOGGER.info("Name: {}", items.get(0).getName());
+		LOGGER.info("Value: {}", items.get(0).getValues().get(0).getValue());
 
 		items.forEach(i -> LOGGER.debug("Received the information of a indicator: {}", i));
+
 	}
 }

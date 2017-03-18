@@ -54,7 +54,13 @@ public class IndicatorController {
 				     .add("values", Json.createArrayBuilder()
 					         .add(Json.createObjectBuilder()
 					             .add("value", "103.31")
-					             .add("datetime_utc", "2015-10-20T22:00:00Z")))).build();
+					             .add("datetime_utc", "2015-10-20T22:00:00Z")
+					         .add("geo_ids", Json.createArrayBuilder()
+					        		 .add(3)))
+					         .add(Json.createObjectBuilder()
+					        		 .add("value", "105.60")
+					        		 .add("datetime_utc", "2015-10-20T22:00:00Z"))
+				     )).build();
 		 return value;
 	}
 }

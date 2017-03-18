@@ -6,6 +6,9 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.batch.item.ItemReader;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 
@@ -60,13 +63,16 @@ class RESTIndicatorReader implements ItemReader<IndicatorDTO> {
 	private List<IndicatorDTO> fetchIndicatorDataFromAPI() {
 		LOGGER.debug("Fetching indicator data from an external API by using the url: {}", apiUrl);
 
-		// RestTemplate restTemplate = new RestTemplate();
-		// IndicatorDTO indicator = restTemplate.getForObject(apiUrl,
-		// IndicatorDTO.class);
+		String url = "https://api.esios.ree.es/indicators/1013";		
+		ResponseEntity<ResponseIndicatorDTO> response;
+		HttpHeaders headers = new HttpHeaders();
+		headers.set("Content-Type", "application/json");
+		headers.set("Authorization", "Token token=\"3426e0505e1c3c67a1713f5c5d42a63bf406a37c088734e29bd6596e5af9fe9d\"");
 
-		ResponseEntity<ResponseIndicatorDTO> response = restTemplate.getForEntity(apiUrl, ResponseIndicatorDTO.class);
+		HttpEntity<String> entity = new HttpEntity<String>("parameters", headers);
+
+		response = restTemplate.exchange(url, HttpMethod.GET, entity, ResponseIndicatorDTO.class);
 		IndicatorDTO indicator = response.getBody().getIndicator();
-		// LOGGER.debug("Found {} indicators", indicator.);
 
 		return Arrays.asList(indicator);
 	}
