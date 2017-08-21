@@ -1,9 +1,13 @@
-com\juanrarios\springbatch\rest\RESTIndicatorReader.class
 com\juanrarios\springbatch\common\LoggingIndicatorProcessor.class
+com\juanrarios\springbatch\rest\LoggingRequestInterceptor.class
+com\juanrarios\springbatch\SpringBatchExampleApplication.class
+com\juanrarios\springbatch\rest\dto\NotificationDTO.class
+com\juanrarios\springbatch\rest\dto\CheapestHourNotificationRequestDTO.class
+com\juanrarios\springbatch\rest\RESTIndicatorJobLauncher.class
+com\juanrarios\springbatch\rest\dto\ResponseIndicatorDTO.class
+com\juanrarios\springbatch\rest\RESTIndicatorReader.class
 com\juanrarios\springbatch\rest\dto\HourPriceDTO.class
 com\juanrarios\springbatch\rest\dto\IndicatorDTO.class
 com\juanrarios\springbatch\rest\dto\IndicatorController.class
-com\juanrarios\springbatch\SpringBatchExampleApplication.class
 com\juanrarios\springbatch\common\LoggingIndicatorWriter.class
-com\juanrarios\springbatch\rest\RESTIndicatorJobLauncher.class
 com\juanrarios\springbatch\rest\RESTIndicatorJobConfig.class

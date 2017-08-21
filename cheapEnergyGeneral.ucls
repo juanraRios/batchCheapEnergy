@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.0" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="com.juanrarios.springbatch.common.LoggingIndicatorWriter" 
+    project="cheap-energy-batch" 
+    file="/cheap-energy-batch/src/main/java/com/juanrarios/springbatch/common/LoggingIndicatorWriter.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="511" y="264"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="com.juanrarios.springbatch.common.LoggingIndicatorProcessor" 
+    project="cheap-energy-batch" 
+    file="/cheap-energy-batch/src/main/java/com/juanrarios/springbatch/common/LoggingIndicatorProcessor.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="53" width="184" x="227" y="238"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="com.juanrarios.springbatch.rest.dto.IndicatorDTO" project="cheap-energy-batch" 
+    file="/cheap-energy-batch/src/main/java/com/juanrarios/springbatch/rest/dto/IndicatorDTO.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="192" y="536"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="com.juanrarios.springbatch.rest.dto.HourPriceDTO" project="cheap-energy-batch" 
+    file="/cheap-energy-batch/src/main/java/com/juanrarios/springbatch/rest/dto/HourPriceDTO.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="72" width="162" x="123" y="659"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="com.juanrarios.springbatch.rest.LoggingRequestInterceptor" 
+    project="cheap-energy-batch" 
+    file="/cheap-energy-batch/src/main/java/com/juanrarios/springbatch/rest/LoggingRequestInterceptor.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="97" y="264"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="com.juanrarios.springbatch.rest.dto.NotificationDTO" project="cheap-energy-batch" 
+    file="/cheap-energy-batch/src/main/java/com/juanrarios/springbatch/rest/dto/NotificationDTO.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="515" y="490"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="com.juanrarios.springbatch.rest.dto.ResponseIndicatorDTO" 
+    project="cheap-energy-batch" 
+    file="/cheap-energy-batch/src/main/java/com/juanrarios/springbatch/rest/dto/ResponseIndicatorDTO.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="87" y="352"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="com.juanrarios.springbatch.rest.RESTIndicatorJobLauncher" 
+    project="cheap-energy-batch" 
+    file="/cheap-energy-batch/src/main/java/com/juanrarios/springbatch/rest/RESTIndicatorJobLauncher.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="99" y="197"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="com.juanrarios.springbatch.rest.dto.CheapestHourNotificationRequestDTO" 
+    project="cheap-energy-batch" 
+    file="/cheap-energy-batch/src/main/java/com/juanrarios/springbatch/rest/dto/CheapestHourNotificationRequestDTO.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="515" y="356"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="com.juanrarios.springbatch.rest.dto.IndicatorController" 
+    project="cheap-energy-batch" 
+    file="/cheap-energy-batch/src/main/java/com/juanrarios/springbatch/rest/dto/IndicatorController.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="469" y="197"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="com.juanrarios.springbatch.rest.RESTIndicatorJobConfig" 
+    project="cheap-energy-batch" 
+    file="/cheap-energy-batch/src/main/java/com/juanrarios/springbatch/rest/RESTIndicatorJobConfig.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="96" width="462" x="8" y="34"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="com.juanrarios.springbatch.rest.RESTIndicatorReader" project="cheap-energy-batch" 
+    file="/cheap-energy-batch/src/main/java/com/juanrarios/springbatch/rest/RESTIndicatorReader.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="278" y="352"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="com.juanrarios.springbatch.LauncherBatch" project="cheap-energy-batch" 
+    file="/cheap-energy-batch/src/main/java/com/juanrarios/springbatch/LauncherBatch.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="53" width="122" x="229" y="171"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="true"/>      
+      <operations public="false" package="false" protected="false" private="false" static="true"/>    
+    </display>  
+  </class>  
+  <association id="14">    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="15" name="indicatortData">        
+        <position height="18" width="74" x="57" y="439"/>      
+      </attribute>      
+      <multiplicity id="16" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="-464" y="337"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="17">    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="18" name="notificationDTO">        
+        <position height="0" width="0" x="-1504" y="291"/>      
+      </attribute>      
+      <multiplicity id="19" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-1504" y="291"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="20">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="21" name="indicator">        
+        <position height="18" width="51" x="245" y="444"/>      
+      </attribute>      
+      <multiplicity id="22" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-464" y="337"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="23">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="24" name="values">        
+        <position height="0" width="0" x="-455" y="393"/>      
+      </attribute>      
+      <multiplicity id="25" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="-455" y="393"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="false" package="false" protected="false" private="false" static="true"/>    
+    <operations public="false" package="false" protected="false" private="false" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

@@ -1,7 +1,5 @@
 package com.juanrarios.springbatch.rest.dto;
 
-import java.util.List;
-
 import javax.json.Json;
 import javax.json.JsonObject;
 

@@ -10,7 +10,7 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootApplication
 @EnableBatchProcessing
 @EnableScheduling
-public class SpringBatchExampleApplication {
+public class LauncherBatch {
 
     @Bean
     RestTemplate restTemplate() {
@@ -18,6 +18,6 @@ public class SpringBatchExampleApplication {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringBatchExampleApplication.class, args);
+        SpringApplication.run(LauncherBatch.class, args);
     }
 }
