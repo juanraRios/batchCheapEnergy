@@ -85,7 +85,7 @@
 		</dependency>
 	</dependencies>
 	<build>
-		<finalName>spring-batch-example</finalName>
+		<finalName>cheap-energy-batch</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

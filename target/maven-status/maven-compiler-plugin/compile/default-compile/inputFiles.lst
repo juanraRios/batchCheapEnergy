@@ -1,13 +1,13 @@
+C:\Users\juanra\workspace\cheap-energy-batch\src\main\java\com\juanrarios\springbatch\common\RestIndicatorProcessor.java
 C:\Users\juanra\workspace\cheap-energy-batch\src\main\java\com\juanrarios\springbatch\common\LoggingIndicatorWriter.java
 C:\Users\juanra\workspace\cheap-energy-batch\src\main\java\com\juanrarios\springbatch\rest\RESTIndicatorJobConfig.java
 C:\Users\juanra\workspace\cheap-energy-batch\src\main\java\com\juanrarios\springbatch\rest\RESTIndicatorJobLauncher.java
-C:\Users\juanra\workspace\cheap-energy-batch\src\main\java\com\juanrarios\springbatch\common\LoggingIndicatorProcessor.java
 C:\Users\juanra\workspace\cheap-energy-batch\src\main\java\com\juanrarios\springbatch\rest\dto\IndicatorDTO.java
 C:\Users\juanra\workspace\cheap-energy-batch\src\main\java\com\juanrarios\springbatch\rest\RESTIndicatorReader.java
+C:\Users\juanra\workspace\cheap-energy-batch\src\main\java\com\juanrarios\springbatch\LauncherBatch.java
 C:\Users\juanra\workspace\cheap-energy-batch\src\main\java\com\juanrarios\springbatch\rest\dto\IndicatorController.java
 C:\Users\juanra\workspace\cheap-energy-batch\src\main\java\com\juanrarios\springbatch\rest\dto\HourPriceDTO.java
 C:\Users\juanra\workspace\cheap-energy-batch\src\main\java\com\juanrarios\springbatch\rest\dto\NotificationDTO.java
 C:\Users\juanra\workspace\cheap-energy-batch\src\main\java\com\juanrarios\springbatch\rest\dto\ResponseIndicatorDTO.java
 C:\Users\juanra\workspace\cheap-energy-batch\src\main\java\com\juanrarios\springbatch\rest\dto\CheapestHourNotificationRequestDTO.java
-C:\Users\juanra\workspace\cheap-energy-batch\src\main\java\com\juanrarios\springbatch\SpringBatchExampleApplication.java
 C:\Users\juanra\workspace\cheap-energy-batch\src\main\java\com\juanrarios\springbatch\rest\LoggingRequestInterceptor.java
