@@ -14,7 +14,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
 import org.springframework.web.client.RestTemplate;
 
-import com.juanrarios.springbatch.common.LoggingIndicatorProcessor;
+import com.juanrarios.springbatch.common.RestIndicatorProcessor;
 import com.juanrarios.springbatch.common.LoggingIndicatorWriter;
 import com.juanrarios.springbatch.rest.dto.IndicatorDTO;
 
@@ -30,7 +30,7 @@ public class RESTIndicatorJobConfig {
 
 	@Bean
 	ItemProcessor<IndicatorDTO, IndicatorDTO> restIndicatorProcessor() {
-		return new LoggingIndicatorProcessor();
+		return new RestIndicatorProcessor();
 	}
 
 	@Bean

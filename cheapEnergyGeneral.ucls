@@ -12,9 +12,9 @@
       <operations public="false" package="false" protected="false" private="false" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="com.juanrarios.springbatch.common.LoggingIndicatorProcessor" 
+  <class id="2" language="java" name="com.juanrarios.springbatch.common.RestIndicatorProcessor" 
     project="cheap-energy-batch" 
-    file="/cheap-energy-batch/src/main/java/com/juanrarios/springbatch/common/LoggingIndicatorProcessor.java" 
+    file="/cheap-energy-batch/src/main/java/com/juanrarios/springbatch/common/RestIndicatorProcessor.java" 
     binary="false" corner="BOTTOM_RIGHT">    
     <position height="53" width="184" x="227" y="238"/>    
     <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -164,27 +164,27 @@
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="20">    
-    <end type="SOURCE" refId="7" navigable="false">      
-      <attribute id="21" name="indicator">        
-        <position height="18" width="51" x="245" y="444"/>      
-      </attribute>      
-      <multiplicity id="22" minimum="0" maximum="1">        
-        <position height="0" width="0" x="-464" y="337"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="3" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="23">    
     <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="24" name="values">        
+      <attribute id="21" name="values">        
         <position height="0" width="0" x="-455" y="393"/>      
       </attribute>      
-      <multiplicity id="25" minimum="0" maximum="2147483647">        
+      <multiplicity id="22" minimum="0" maximum="2147483647">        
         <position height="0" width="0" x="-455" y="393"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="23">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="24" name="indicator">        
+        <position height="18" width="51" x="245" y="444"/>      
+      </attribute>      
+      <multiplicity id="25" minimum="0" maximum="1">        
+        <position height="0" width="0" x="-464" y="337"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 

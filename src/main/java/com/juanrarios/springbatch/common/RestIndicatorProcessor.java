@@ -15,9 +15,9 @@ import com.juanrarios.springbatch.rest.dto.IndicatorDTO;
  * processed indicator to the log and returns the processed object.
  *
  */
-public class LoggingIndicatorProcessor implements ItemProcessor<IndicatorDTO, IndicatorDTO> {
+public class RestIndicatorProcessor implements ItemProcessor<IndicatorDTO, IndicatorDTO> {
 
-	private static final Logger LOGGER = LoggerFactory.getLogger(LoggingIndicatorProcessor.class);
+	private static final Logger LOGGER = LoggerFactory.getLogger(RestIndicatorProcessor.class);
 
 	@Override
 	public IndicatorDTO process(IndicatorDTO item) throws Exception {
